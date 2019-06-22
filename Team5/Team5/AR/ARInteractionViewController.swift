@@ -27,9 +27,6 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let tapRecogniser = UITapGestureRecognizer(target: self, action: #selector(showInfo))
-        sceneView.addGestureRecognizer(tapRecogniser)
-
         infoTitleLabel.text = arModel.title
         descriptionTextView.text = arModel.description
 
@@ -120,6 +117,7 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
             // Search a virtual object node which has a hit node
             guard let hitVirtualNode = searchHitVirtualObjectNode(under: node, results: results) else {continue}
             hitVirtualNode.react()
+            showInfo()
             
             return true
         }
