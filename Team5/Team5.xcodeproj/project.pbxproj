@@ -12,6 +12,13 @@
 		1E63413222BE4350007C4A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E63413022BE4350007C4A5B /* Main.storyboard */; };
 		1E63413422BE4352007C4A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E63413322BE4352007C4A5B /* Assets.xcassets */; };
 		1E63413722BE4352007C4A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E63413522BE4352007C4A5B /* LaunchScreen.storyboard */; };
+		1E63414122BE451F007C4A5B /* ARInteractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63413F22BE451F007C4A5B /* ARInteractionViewController.swift */; };
+		1E63414222BE451F007C4A5B /* ARInteraction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E63414022BE451F007C4A5B /* ARInteraction.storyboard */; };
+		1E63414822BE4551007C4A5B /* SceneKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63414322BE4550007C4A5B /* SceneKitUtils.swift */; };
+		1E63414922BE4551007C4A5B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63414422BE4550007C4A5B /* Common.swift */; };
+		1E63414A22BE4551007C4A5B /* VirtualObjectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63414522BE4551007C4A5B /* VirtualObjectNode.swift */; };
+		1E63414B22BE4551007C4A5B /* ARPlaneAnchor+Visualize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63414622BE4551007C4A5B /* ARPlaneAnchor+Visualize.swift */; };
+		1E63414C22BE4551007C4A5B /* TrackingState+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63414722BE4551007C4A5B /* TrackingState+Description.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		1E63413322BE4352007C4A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E63413622BE4352007C4A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E63413822BE4352007C4A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E63413F22BE451F007C4A5B /* ARInteractionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARInteractionViewController.swift; sourceTree = "<group>"; };
+		1E63414022BE451F007C4A5B /* ARInteraction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ARInteraction.storyboard; sourceTree = "<group>"; };
+		1E63414322BE4550007C4A5B /* SceneKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitUtils.swift; sourceTree = "<group>"; };
+		1E63414422BE4550007C4A5B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		1E63414522BE4551007C4A5B /* VirtualObjectNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectNode.swift; sourceTree = "<group>"; };
+		1E63414622BE4551007C4A5B /* ARPlaneAnchor+Visualize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARPlaneAnchor+Visualize.swift"; sourceTree = "<group>"; };
+		1E63414722BE4551007C4A5B /* TrackingState+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackingState+Description.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,8 @@
 		1E63412B22BE4350007C4A5B /* Team5 */ = {
 			isa = PBXGroup;
 			children = (
+				1E63414D22BE49E9007C4A5B /* 3DModels */,
+				1E63413E22BE4504007C4A5B /* AR */,
 				1E63412C22BE4350007C4A5B /* AppDelegate.swift */,
 				1E63412E22BE4350007C4A5B /* ViewController.swift */,
 				1E63413022BE4350007C4A5B /* Main.storyboard */,
@@ -62,6 +78,27 @@
 				1E63413822BE4352007C4A5B /* Info.plist */,
 			);
 			path = Team5;
+			sourceTree = "<group>";
+		};
+		1E63413E22BE4504007C4A5B /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				1E63414422BE4550007C4A5B /* Common.swift */,
+				1E63414622BE4551007C4A5B /* ARPlaneAnchor+Visualize.swift */,
+				1E63414322BE4550007C4A5B /* SceneKitUtils.swift */,
+				1E63414722BE4551007C4A5B /* TrackingState+Description.swift */,
+				1E63414522BE4551007C4A5B /* VirtualObjectNode.swift */,
+				1E63414022BE451F007C4A5B /* ARInteraction.storyboard */,
+				1E63413F22BE451F007C4A5B /* ARInteractionViewController.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		1E63414D22BE49E9007C4A5B /* 3DModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3DModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +161,7 @@
 			files = (
 				1E63413722BE4352007C4A5B /* LaunchScreen.storyboard in Resources */,
 				1E63413422BE4352007C4A5B /* Assets.xcassets in Resources */,
+				1E63414222BE451F007C4A5B /* ARInteraction.storyboard in Resources */,
 				1E63413222BE4350007C4A5B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E63414122BE451F007C4A5B /* ARInteractionViewController.swift in Sources */,
+				1E63414822BE4551007C4A5B /* SceneKitUtils.swift in Sources */,
+				1E63414B22BE4551007C4A5B /* ARPlaneAnchor+Visualize.swift in Sources */,
 				1E63412F22BE4350007C4A5B /* ViewController.swift in Sources */,
+				1E63414922BE4551007C4A5B /* Common.swift in Sources */,
+				1E63414C22BE4551007C4A5B /* TrackingState+Description.swift in Sources */,
+				1E63414A22BE4551007C4A5B /* VirtualObjectNode.swift in Sources */,
 				1E63412D22BE4350007C4A5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CD97PK24A;
 				INFOPLIST_FILE = Team5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CD97PK24A;
 				INFOPLIST_FILE = Team5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
