@@ -91,6 +91,7 @@ extension SCNNode {
             addChildNode(child)
         }
     }
+<<<<<<< Updated upstream
     
     func loadObj(name: String) {
         
@@ -117,6 +118,8 @@ extension SCNNode {
             addChildNode(child)
         }
     }
+=======
+>>>>>>> Stashed changes
 }
 
 extension SCNView {
