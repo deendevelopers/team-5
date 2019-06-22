@@ -100,7 +100,7 @@ extension SCNNode {
         let asset = MDLAsset(url: url)
         let scene = SCNScene(mdlAsset: asset)
         for child in scene.rootNode.childNodes {
-//            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
             addChildNode(child)
         }
     }

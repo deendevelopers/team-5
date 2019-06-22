@@ -23,6 +23,15 @@
 		1E63414A22BE4551007C4A5B /* VirtualObjectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63414522BE4551007C4A5B /* VirtualObjectNode.swift */; };
 		1E63414B22BE4551007C4A5B /* ARPlaneAnchor+Visualize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63414622BE4551007C4A5B /* ARPlaneAnchor+Visualize.swift */; };
 		1E63414C22BE4551007C4A5B /* TrackingState+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63414722BE4551007C4A5B /* TrackingState+Description.swift */; };
+		1EF592A422BE783E00A9BFA6 /* Badshahi_Mosque.obj.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592A222BE783E00A9BFA6 /* Badshahi_Mosque.obj.mtl */; };
+		1EF592A522BE783E00A9BFA6 /* Badshahi_Mosque.obj in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592A322BE783E00A9BFA6 /* Badshahi_Mosque.obj */; };
+		1EF592A822BE78CB00A9BFA6 /* gole.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592A622BE78CA00A9BFA6 /* gole.jpg */; };
+		1EF592A922BE78CB00A9BFA6 /* brick_wall_with_grille_4161566.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592A722BE78CB00A9BFA6 /* brick_wall_with_grille_4161566.png */; };
+		1EF592C122BE7D6600A9BFA6 /* Quran.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592BC22BE7D6500A9BFA6 /* Quran.mtl */; };
+		1EF592C222BE7D6600A9BFA6 /* Carpet.psd in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592BD22BE7D6500A9BFA6 /* Carpet.psd */; };
+		1EF592C322BE7D6600A9BFA6 /* Quran.psd in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592BE22BE7D6600A9BFA6 /* Quran.psd */; };
+		1EF592C422BE7D6600A9BFA6 /* Rehal.psd in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592BF22BE7D6600A9BFA6 /* Rehal.psd */; };
+		1EF592C522BE7D6600A9BFA6 /* Quran.obj in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592C022BE7D6600A9BFA6 /* Quran.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +53,15 @@
 		1E63414522BE4551007C4A5B /* VirtualObjectNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectNode.swift; sourceTree = "<group>"; };
 		1E63414622BE4551007C4A5B /* ARPlaneAnchor+Visualize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARPlaneAnchor+Visualize.swift"; sourceTree = "<group>"; };
 		1E63414722BE4551007C4A5B /* TrackingState+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackingState+Description.swift"; sourceTree = "<group>"; };
+		1EF592A222BE783E00A9BFA6 /* Badshahi_Mosque.obj.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Badshahi_Mosque.obj.mtl; sourceTree = "<group>"; };
+		1EF592A322BE783E00A9BFA6 /* Badshahi_Mosque.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Badshahi_Mosque.obj; sourceTree = "<group>"; };
+		1EF592A622BE78CA00A9BFA6 /* gole.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gole.jpg; sourceTree = "<group>"; };
+		1EF592A722BE78CB00A9BFA6 /* brick_wall_with_grille_4161566.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brick_wall_with_grille_4161566.png; sourceTree = "<group>"; };
+		1EF592BC22BE7D6500A9BFA6 /* Quran.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quran.mtl; sourceTree = "<group>"; };
+		1EF592BD22BE7D6500A9BFA6 /* Carpet.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Carpet.psd; sourceTree = "<group>"; };
+		1EF592BE22BE7D6600A9BFA6 /* Quran.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quran.psd; sourceTree = "<group>"; };
+		1EF592BF22BE7D6600A9BFA6 /* Rehal.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rehal.psd; sourceTree = "<group>"; };
+		1EF592C022BE7D6600A9BFA6 /* Quran.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quran.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +143,15 @@
 		1E63414D22BE49E9007C4A5B /* 3DModels */ = {
 			isa = PBXGroup;
 			children = (
+				1EF592A322BE783E00A9BFA6 /* Badshahi_Mosque.obj */,
+				1EF592A222BE783E00A9BFA6 /* Badshahi_Mosque.obj.mtl */,
+				1EF592A722BE78CB00A9BFA6 /* brick_wall_with_grille_4161566.png */,
+				1EF592BD22BE7D6500A9BFA6 /* Carpet.psd */,
+				1EF592BC22BE7D6500A9BFA6 /* Quran.mtl */,
+				1EF592C022BE7D6600A9BFA6 /* Quran.obj */,
+				1EF592BE22BE7D6600A9BFA6 /* Quran.psd */,
+				1EF592BF22BE7D6600A9BFA6 /* Rehal.psd */,
+				1EF592A622BE78CA00A9BFA6 /* gole.jpg */,
 			);
 			path = 3DModels;
 			sourceTree = "<group>";
@@ -187,9 +214,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF592C422BE7D6600A9BFA6 /* Rehal.psd in Resources */,
+				1EF592C222BE7D6600A9BFA6 /* Carpet.psd in Resources */,
+				1EF592A822BE78CB00A9BFA6 /* gole.jpg in Resources */,
+				1EF592A422BE783E00A9BFA6 /* Badshahi_Mosque.obj.mtl in Resources */,
 				1E63413722BE4352007C4A5B /* LaunchScreen.storyboard in Resources */,
+				1EF592A522BE783E00A9BFA6 /* Badshahi_Mosque.obj in Resources */,
 				0DCECEA422BE4F8900C57120 /* ListCell.xib in Resources */,
+				1EF592A922BE78CB00A9BFA6 /* brick_wall_with_grille_4161566.png in Resources */,
 				1E63413422BE4352007C4A5B /* Assets.xcassets in Resources */,
+				1EF592C122BE7D6600A9BFA6 /* Quran.mtl in Resources */,
+				1EF592C322BE7D6600A9BFA6 /* Quran.psd in Resources */,
+				1EF592C522BE7D6600A9BFA6 /* Quran.obj in Resources */,
 				1E63414222BE451F007C4A5B /* ARInteraction.storyboard in Resources */,
 				1E63413222BE4350007C4A5B /* Main.storyboard in Resources */,
 			);
