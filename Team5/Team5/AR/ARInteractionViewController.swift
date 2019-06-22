@@ -14,6 +14,11 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet var trackingStateLabel: UILabel!
 
+    @IBOutlet weak var infoTitleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
+
     var arModel: ARModel!
     @IBOutlet weak var informationViewTopConstraint: NSLayoutConstraint!
     
@@ -24,6 +29,9 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
 
         let tapRecogniser = UITapGestureRecognizer(target: self, action: #selector(showInfo))
         sceneView.addGestureRecognizer(tapRecogniser)
+
+        infoTitleLabel.text = arModel.title
+        descriptionTextView.text = arModel.description
 
         navigationItem.largeTitleDisplayMode = .never
         sceneView.delegate = self
@@ -153,6 +161,13 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
 
     @objc func showInfo() {
         informationViewTopConstraint.constant = -250
+        UIView.animate(withDuration: 0.5) { [weak self] in
+            self?.view.layoutIfNeeded()
+        }
+    }
+    @IBAction func closeInfoView(_ sender: Any) {
+
+        informationViewTopConstraint.constant = 0
         UIView.animate(withDuration: 0.5) { [weak self] in
             self?.view.layoutIfNeeded()
         }
