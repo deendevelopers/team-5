@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListCell" customModule="Team5" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="278"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="278"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmt-zE-tRN">
+                        <rect key="frame" x="32" y="8" width="330" height="262"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaaba" translatesAutoresizingMaskIntoConstraints="NO" id="gPP-LX-h2S">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="262"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wue-pM-mv3" userLabel="Label Container">
+                                <rect key="frame" x="0.0" y="197" width="330" height="65"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="E2x-tn-bSY">
+                                        <rect key="frame" x="8" y="8" width="314" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oes-pW-aed">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edf-oT-rUv">
+                                                <rect key="frame" x="0.0" y="25" width="314" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="E2x-tn-bSY" firstAttribute="top" secondItem="wue-pM-mv3" secondAttribute="top" constant="8" id="KZn-xD-y89"/>
+                                    <constraint firstAttribute="trailing" secondItem="E2x-tn-bSY" secondAttribute="trailing" constant="8" id="bsW-oQ-PV9"/>
+                                    <constraint firstItem="E2x-tn-bSY" firstAttribute="centerY" secondItem="wue-pM-mv3" secondAttribute="centerY" id="cMc-9v-Lfx"/>
+                                    <constraint firstItem="E2x-tn-bSY" firstAttribute="leading" secondItem="wue-pM-mv3" secondAttribute="leading" constant="8" id="rj8-7k-4Km"/>
+                                    <constraint firstAttribute="bottom" secondItem="E2x-tn-bSY" secondAttribute="bottom" constant="8" id="w0Y-eJ-AqB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gPP-LX-h2S" firstAttribute="leading" secondItem="rmt-zE-tRN" secondAttribute="leading" id="6ga-TF-K2Q"/>
+                            <constraint firstAttribute="trailing" secondItem="wue-pM-mv3" secondAttribute="trailing" id="CO9-3b-hIO"/>
+                            <constraint firstAttribute="trailing" secondItem="gPP-LX-h2S" secondAttribute="trailing" id="Gup-Wi-vBV"/>
+                            <constraint firstAttribute="bottom" secondItem="wue-pM-mv3" secondAttribute="bottom" id="fpG-6y-3Lh"/>
+                            <constraint firstAttribute="bottom" secondItem="gPP-LX-h2S" secondAttribute="bottom" id="gIC-Os-uDm"/>
+                            <constraint firstItem="wue-pM-mv3" firstAttribute="leading" secondItem="rmt-zE-tRN" secondAttribute="leading" id="pcX-wa-Vbr"/>
+                            <constraint firstItem="gPP-LX-h2S" firstAttribute="top" secondItem="rmt-zE-tRN" secondAttribute="top" id="xgA-Th-V4d"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rmt-zE-tRN" secondAttribute="trailing" constant="32" id="AMY-9I-IzF"/>
+                <constraint firstItem="rmt-zE-tRN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="WIy-M4-Rdv"/>
+                <constraint firstAttribute="bottom" secondItem="rmt-zE-tRN" secondAttribute="bottom" constant="8" id="cuk-EZ-JRo"/>
+                <constraint firstItem="rmt-zE-tRN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="lB4-0T-ILe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="368" height="244"/>
+            <connections>
+                <outlet property="containerView" destination="rmt-zE-tRN" id="1lI-lv-HGx"/>
+                <outlet property="descriptionLabel" destination="edf-oT-rUv" id="CM2-9I-CqJ"/>
+                <outlet property="imageView" destination="gPP-LX-h2S" id="pQ9-ub-gIn"/>
+                <outlet property="titleLabel" destination="Oes-pW-aed" id="qRz-HY-wmF"/>
+            </connections>
+            <point key="canvasLocation" x="368.11594202898556" y="217.63392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="kaaba" width="153" height="153"/>
+    </resources>
+</document>
