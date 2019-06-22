@@ -11,37 +11,18 @@ import SceneKit
 class VirtualObjectNode: SCNNode {
 
     enum VirtualObjectType {
-<<<<<<< Updated upstream
         case kaaba
     }
     
     init(type: VirtualObjectType = .kaaba) {
-=======
-        case duck
-        case wheelbarrow
-        case teapot
-    }
     
-    init(type: VirtualObjectType = .duck) {
->>>>>>> Stashed changes
         super.init()
         
         var scale = 1.0
         switch type {
-<<<<<<< Updated upstream
         case .kaaba:
             loadDae(name: "kaaba")
             scale = 0.001
-=======
-        case .duck:
-            loadScn(name: "duck", inDirectory: "models.scnassets/duck")
-        case .wheelbarrow:
-            loadUsdz(name: "wheelbarrow")
-            scale = 0.005
-        case .teapot:
-            loadUsdz(name: "teapot")
-            scale = 0.005
->>>>>>> Stashed changes
         }
         self.scale = SCNVector3(scale, scale, scale)
     }
