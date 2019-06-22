@@ -18,7 +18,8 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        navigationItem.largeTitleDisplayMode = .never
         sceneView.delegate = self
         sceneView.scene = SCNScene()
         sceneView.debugOptions = [SCNDebugOptions.showFeaturePoints]

@@ -21,13 +21,14 @@ struct Sections {
 
 struct HomeListDataSource {
     let sections = [
-        Sections(sectionTitle: "AR Mosques", models: [
-            ARModel(title: "Ka'aba",
+        Sections(sectionTitle: "Mosques", models: [
+            ARModel(title: "Ka'bah",
                     image: UIImage(named: "kaaba")!,
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"),
-            ARModel(title: "Masjid an-Nabawi",
-                    image: UIImage(named: "nabawi")!,
-                    description: "description")
+                    description: "The Ka’bah is the holiest of all Muslim places in the world. It is located at the center of Al-Masjid al-Haram, in Mecca, Saudi Arabia. Everywhere in the world, Muslims have to face the Ka’bah during prayers, known as facing the Qiblah."),
+
+            ARModel(title: "Badshahi Mosque",
+                    image: UIImage(named: "badshahi-mosque")!,
+                    description: "Commissioned by Emperor Aurangzeb in 1671, with construction of the mosque lasting for two years until 1673. The mosque is an important example of Mughal architecture, with an exterior that is decorated with carved red sandstone with marble inlay. It remains the largest and most recent of the grand imperial mosques of the Mughal-era, and is the second-largest mosque in Pakistan. After the fall of the Mughal Empire, the mosque was used as a garrison by the Sikh Empire and the British Empire, and is now one of Pakistan's most iconic sights.")
         ])
     ]
 }
