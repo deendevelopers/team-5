@@ -15,11 +15,15 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
     @IBOutlet var trackingStateLabel: UILabel!
 
     var arModel: ARModel!
+    @IBOutlet weak var informationViewTopConstraint: NSLayoutConstraint!
     
     var didAdd = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let tapRecogniser = UITapGestureRecognizer(target: self, action: #selector(showInfo))
+        sceneView.addGestureRecognizer(tapRecogniser)
 
         navigationItem.largeTitleDisplayMode = .never
         sceneView.delegate = self
@@ -37,7 +41,7 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
         
         sceneView.session.pause()
     }
-    
+
     // MARK: - ARSCNViewDelegate
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
@@ -144,6 +148,13 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
 
         if !isHit {
             planeHitTest(pos)
+        }
+    }
+
+    @objc func showInfo() {
+        informationViewTopConstraint.constant = -250
+        UIView.animate(withDuration: 0.5) { [weak self] in
+            self?.view.layoutIfNeeded()
         }
     }
 }
