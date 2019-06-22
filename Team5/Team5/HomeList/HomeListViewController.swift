@@ -33,6 +33,7 @@ extension HomeListViewController: UICollectionViewDelegate {
         guard let vc = storyboard.instantiateInitialViewController() as? ARInteractionViewController else {
             return
         }
+        vc.arModel = dataSource.sections[indexPath.section].models[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
 }

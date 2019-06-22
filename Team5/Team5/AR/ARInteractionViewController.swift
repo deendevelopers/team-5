@@ -14,6 +14,8 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet var trackingStateLabel: UILabel!
 
+    var arModel: ARModel!
+    
     var didAdd = false
     
     override func viewDidLoad() {
@@ -48,8 +50,8 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
         guard let planeAnchor = anchor as? ARPlaneAnchor else {fatalError()}
 //        planeAnchor.addPlaneNode(on: node, contents: UIColor.arBlue.withAlphaComponent(0.3))
         
-        if !didAdd {
-            let virtualNode = VirtualObjectNode(type: .mosque)
+        if !didAdd, let type = self.arModel.virtualObjectType {
+            let virtualNode = VirtualObjectNode(type: type)
             DispatchQueue.main.async(execute: {
                 node.addChildNode(virtualNode)
             })
@@ -146,3 +148,15 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
     }
 }
 
+extension ARModel {
+    var virtualObjectType: VirtualObjectNode.VirtualObjectType? {
+        switch self.title {
+        case "Badshahi Mosque":
+            return .mosque
+        case "Quran":
+            return .quran
+        default:
+            return nil
+        }
+    }
+}

@@ -21,10 +21,10 @@ struct Sections {
 
 struct HomeListDataSource {
     let sections = [
-        Sections(sectionTitle: "Mosques", models: [
-            ARModel(title: "Ka'bah",
-                    image: UIImage(named: "kaaba")!,
-                    description: "The Ka’bah is the holiest of all Muslim places in the world. It is located at the center of Al-Masjid al-Haram, in Mecca, Saudi Arabia. Everywhere in the world, Muslims have to face the Ka’bah during prayers, known as facing the Qiblah."),
+        Sections(sectionTitle: "", models: [
+            ARModel(title: "Quran",
+                    image: UIImage(named: "quran")!,
+                    description: "The Qur'an, sometimes spelled Koran, (Arabic: القرآن) is the holy book of Islam. The Qur'an is considered by Muslims to be 'The Word of Allah (God)'. This book is different from other religious texts in that it is believed to be written directly by God, through the prophet Muhammad. Some Muslims call it the Final Testament."),
 
             ARModel(title: "Badshahi Mosque",
                     image: UIImage(named: "badshahi-mosque")!,
