@@ -53,7 +53,7 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
 //        planeAnchor.addPlaneNode(on: node, contents: UIColor.arBlue.withAlphaComponent(0.3))
         
         if !didAdd {
-            let virtualNode = VirtualObjectNode(type: .kaaba)
+            let virtualNode = VirtualObjectNode(type: .mosque)
             DispatchQueue.main.async(execute: {
                 node.addChildNode(virtualNode)
             })

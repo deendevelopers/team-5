@@ -1,0 +1,26 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.187496374)
+
+newmtl lambert_gole
+Kd 0.8 0.8 0.8
+Ka 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd gole.jpg
+
+newmtl lambert_walls
+Kd 0.8 0.8 0.8
+Ka 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd brick_wall_with_grille_4161566.png
+
+newmtl lambert_black
+Kd 0 0 0
+Ka 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+
