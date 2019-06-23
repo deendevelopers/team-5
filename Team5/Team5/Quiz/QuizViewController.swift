@@ -75,6 +75,15 @@ class QuizViewController: UIViewController {
         option3Button.layer.shadowOpacity = 0.5
         option3Button.layer.shadowOffset = .zero
         option3Button.layer.shadowRadius = 4.0
+
+        option1Button.titleEdgeInsets.left = 16
+        option1Button.titleEdgeInsets.right = 16
+
+        option2Button.titleEdgeInsets.left = 16
+        option2Button.titleEdgeInsets.right = 16
+
+        option3Button.titleEdgeInsets.left = 16
+        option3Button.titleEdgeInsets.right = 16
     }
 
     private func startAnimation() {

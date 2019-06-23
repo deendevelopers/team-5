@@ -34,6 +34,11 @@ class ListCell: UICollectionViewCell {
         contentView.layer.shadowOpacity = 0.5
         contentView.layer.shadowOffset = .zero
         contentView.layer.shadowRadius = 4.0
+
+        questionButton.layer.shadowColor = UIColor.black.cgColor
+        questionButton.layer.shadowOpacity = 0.5
+        questionButton.layer.shadowOffset = .zero
+        questionButton.layer.shadowRadius = 4.0
     }
 
     public func configure(with model: ARModel) {
