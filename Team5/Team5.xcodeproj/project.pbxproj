@@ -121,9 +121,9 @@
 				1E63413E22BE4504007C4A5B /* AR */,
 				0DCECEA522BE54DC00C57120 /* CollectionView Resources */,
 				0DCECE9A22BE457400C57120 /* HomeList */,
-				1E63412C22BE4350007C4A5B /* AppDelegate.swift */,
 				1E63413022BE4350007C4A5B /* Main.storyboard */,
 				1E63413322BE4352007C4A5B /* Assets.xcassets */,
+				1E63412C22BE4350007C4A5B /* AppDelegate.swift */,
 				1E63413522BE4352007C4A5B /* LaunchScreen.storyboard */,
 				1E63413822BE4352007C4A5B /* Info.plist */,
 			);
@@ -404,7 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4CD575W4Y2;
+				DEVELOPMENT_TEAM = 7G93VTEATC;
 				INFOPLIST_FILE = Team5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,7 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4CD575W4Y2;
+				DEVELOPMENT_TEAM = 7G93VTEATC;
 				INFOPLIST_FILE = Team5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -83,8 +83,18 @@ extension HomeListViewController: UICollectionViewDelegateFlowLayout {
                     fatalError("Invalid view type")
             }
 
-            headerView.headerLabel.text = dataSource.sections[indexPath.section].sectionTitle
             return headerView
+
+        case UICollectionView.elementKindSectionFooter:
+
+            guard let footerView = collectionView.dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: "FooterCollectionReusableView",
+                for: indexPath) as? HeaderCollectionReusableView else {
+                    fatalError("Invalid view type")
+            }
+
+            return footerView
 
         default:
             assert(false, "Invalid element type")

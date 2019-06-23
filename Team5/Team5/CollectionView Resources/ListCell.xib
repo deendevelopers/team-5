@@ -81,6 +81,7 @@
                 <outlet property="containerView" destination="rmt-zE-tRN" id="1lI-lv-HGx"/>
                 <outlet property="descriptionLabel" destination="edf-oT-rUv" id="CM2-9I-CqJ"/>
                 <outlet property="imageView" destination="gPP-LX-h2S" id="pQ9-ub-gIn"/>
+                <outlet property="labelContainerView" destination="wue-pM-mv3" id="fDY-9z-YTe"/>
                 <outlet property="titleLabel" destination="Oes-pW-aed" id="qRz-HY-wmF"/>
             </connections>
             <point key="canvasLocation" x="368.11594202898556" y="217.63392857142856"/>
