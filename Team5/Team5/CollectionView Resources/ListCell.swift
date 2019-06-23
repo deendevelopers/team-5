@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import Lottie
+
+protocol ListCellDelegate {
+    func didTapListCell(model: ARModel)
+}
 
 class ListCell: UICollectionViewCell {
 
@@ -16,6 +21,10 @@ class ListCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+
+    var selectedModel: ARModel?
+
+    var delegate: ListCellDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,6 +37,7 @@ class ListCell: UICollectionViewCell {
     }
 
     public func configure(with model: ARModel) {
+        selectedModel = model
         imageView.image = model.image
         titleLabel.text = model.title
         descriptionLabel.text = model.description
@@ -48,6 +58,7 @@ class ListCell: UICollectionViewCell {
     }
 
     @IBAction func onQuestionButtonPressed(_ sender: Any) {
-        print("pressed")
+        guard let model = selectedModel else { return }
+        delegate?.didTapListCell(model: model)
     }
 }

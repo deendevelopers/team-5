@@ -1,0 +1,20 @@
+PODS:
+  - lottie-ios (3.0.4)
+  - SRCountdownTimer (1.1)
+
+DEPENDENCIES:
+  - lottie-ios
+  - SRCountdownTimer
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - lottie-ios
+    - SRCountdownTimer
+
+SPEC CHECKSUMS:
+  lottie-ios: 55a2de40418f8de2b155efaba4d4d1a025a5c570
+  SRCountdownTimer: 9c92e444b5403c92f01dd6610299b8c634bc8562
+
+PODFILE CHECKSUM: 775c7c802f5a09f8c39f06112858b05115c98b14
+
+COCOAPODS: 1.6.1

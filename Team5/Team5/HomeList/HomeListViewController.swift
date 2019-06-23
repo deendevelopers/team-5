@@ -25,6 +25,17 @@ class HomeListViewController: UIViewController {
     }
 }
 
+// MARK: - List Cell Delegate
+
+extension HomeListViewController: ListCellDelegate {
+    func didTapListCell(model: ARModel) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizViewController") as? QuizViewController else {
+            return
+        }
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
 // MARK: - UICollectionView Delegate
 
 extension HomeListViewController: UICollectionViewDelegate {
@@ -47,6 +58,7 @@ extension HomeListViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
 
+        cell.delegate = self
         cell.configure(with: dataSource.sections[indexPath.section].models[indexPath.row])
         return cell
     }

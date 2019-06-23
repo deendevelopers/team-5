@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D52B2E822BF86D300D9526C /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52B2E722BF86D300D9526C /* QuizViewController.swift */; };
+		0D52B2ED22BF8BAB00D9526C /* question-mark.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D52B2EC22BF8BAB00D9526C /* question-mark.json */; };
 		0DCECE9C22BE462B00C57120 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCECE9B22BE462B00C57120 /* ARModel.swift */; };
 		0DCECEA322BE4F8900C57120 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCECEA122BE4F8900C57120 /* ListCell.swift */; };
 		0DCECEA422BE4F8900C57120 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DCECEA222BE4F8900C57120 /* ListCell.xib */; };
 		0DCECEA722BE550B00C57120 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCECEA622BE550B00C57120 /* HeaderCollectionReusableView.swift */; };
+		1A26943ED2BE5E1803905083 /* Pods_Team5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A597FC01703E071E27E2D41 /* Pods_Team5.framework */; };
 		1E63412D22BE4350007C4A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63412C22BE4350007C4A5B /* AppDelegate.swift */; };
 		1E63412F22BE4350007C4A5B /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E63412E22BE4350007C4A5B /* HomeListViewController.swift */; };
 		1E63413222BE4350007C4A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E63413022BE4350007C4A5B /* Main.storyboard */; };
@@ -37,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D52B2E722BF86D300D9526C /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		0D52B2EC22BF8BAB00D9526C /* question-mark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "question-mark.json"; sourceTree = "<group>"; };
 		0DCECE9B22BE462B00C57120 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
 		0DCECEA122BE4F8900C57120 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		0DCECEA222BE4F8900C57120 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
@@ -66,6 +71,9 @@
 		1EF592C022BE7D6600A9BFA6 /* Quran.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quran.obj; sourceTree = "<group>"; };
 		1EF592C622BE8EAE00A9BFA6 /* Untitled.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Untitled.obj; sourceTree = "<group>"; };
 		1EF592C722BE8EAE00A9BFA6 /* Untitled.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Untitled.mtl; sourceTree = "<group>"; };
+		43F04C6313697EE37F9791E8 /* Pods-Team5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team5.debug.xcconfig"; path = "Target Support Files/Pods-Team5/Pods-Team5.debug.xcconfig"; sourceTree = "<group>"; };
+		8A597FC01703E071E27E2D41 /* Pods_Team5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Team5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED41F27B5239823FAAB767D0 /* Pods-Team5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team5.release.xcconfig"; path = "Target Support Files/Pods-Team5/Pods-Team5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +81,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A26943ED2BE5E1803905083 /* Pods_Team5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04515B70108FD76A09A32470 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43F04C6313697EE37F9791E8 /* Pods-Team5.debug.xcconfig */,
+				ED41F27B5239823FAAB767D0 /* Pods-Team5.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0D52B2E622BF86C200D9526C /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				0D52B2E722BF86D300D9526C /* QuizViewController.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		0D52B2EB22BF86F800D9526C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D52B2EC22BF8BAB00D9526C /* question-mark.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0DCECE9A22BE457400C57120 /* HomeList */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +132,21 @@
 			path = "CollectionView Resources";
 			sourceTree = "<group>";
 		};
+		11B9EE642FCE9EDF4B2B9862 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A597FC01703E071E27E2D41 /* Pods_Team5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1E63412022BE4350007C4A5B = {
 			isa = PBXGroup;
 			children = (
 				1E63412B22BE4350007C4A5B /* Team5 */,
 				1E63412A22BE4350007C4A5B /* Products */,
+				04515B70108FD76A09A32470 /* Pods */,
+				11B9EE642FCE9EDF4B2B9862 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,9 +161,11 @@
 		1E63412B22BE4350007C4A5B /* Team5 */ = {
 			isa = PBXGroup;
 			children = (
+				0D52B2EB22BF86F800D9526C /* Resources */,
 				1E63414D22BE49E9007C4A5B /* 3DModels */,
 				1E63413E22BE4504007C4A5B /* AR */,
 				0DCECEA522BE54DC00C57120 /* CollectionView Resources */,
+				0D52B2E622BF86C200D9526C /* Quiz */,
 				0DCECE9A22BE457400C57120 /* HomeList */,
 				1E63413022BE4350007C4A5B /* Main.storyboard */,
 				1E63413322BE4352007C4A5B /* Assets.xcassets */,
@@ -169,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E63413B22BE4352007C4A5B /* Build configuration list for PBXNativeTarget "Team5" */;
 			buildPhases = (
+				86392FE299D1B8109783D9AE /* [CP] Check Pods Manifest.lock */,
 				1E63412522BE4350007C4A5B /* Sources */,
 				1E63412622BE4350007C4A5B /* Frameworks */,
 				1E63412722BE4350007C4A5B /* Resources */,
+				45485CB4EBBFB30ED87E82E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +279,7 @@
 				0DCECEA422BE4F8900C57120 /* ListCell.xib in Resources */,
 				1EF592A922BE78CB00A9BFA6 /* brick_wall_with_grille_4161566.png in Resources */,
 				1E63413422BE4352007C4A5B /* Assets.xcassets in Resources */,
+				0D52B2ED22BF8BAB00D9526C /* question-mark.json in Resources */,
 				1EF592C122BE7D6600A9BFA6 /* Quran.mtl in Resources */,
 				1EF592C322BE7D6600A9BFA6 /* Quran.psd in Resources */,
 				1EF592C522BE7D6600A9BFA6 /* Quran.obj in Resources */,
@@ -240,6 +289,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45485CB4EBBFB30ED87E82E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Team5/Pods-Team5-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SRCountdownTimer/SRCountdownTimer.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SRCountdownTimer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Team5/Pods-Team5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86392FE299D1B8109783D9AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Team5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E63412522BE4350007C4A5B /* Sources */ = {
@@ -254,6 +352,7 @@
 				1E63414C22BE4551007C4A5B /* TrackingState+Description.swift in Sources */,
 				1E63414A22BE4551007C4A5B /* VirtualObjectNode.swift in Sources */,
 				0DCECE9C22BE462B00C57120 /* ARModel.swift in Sources */,
+				0D52B2E822BF86D300D9526C /* QuizViewController.swift in Sources */,
 				0DCECEA322BE4F8900C57120 /* ListCell.swift in Sources */,
 				1E63412F22BE4350007C4A5B /* HomeListViewController.swift in Sources */,
 				0DCECEA722BE550B00C57120 /* HeaderCollectionReusableView.swift in Sources */,
@@ -401,6 +500,7 @@
 		};
 		1E63413C22BE4352007C4A5B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43F04C6313697EE37F9791E8 /* Pods-Team5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -419,6 +519,7 @@
 		};
 		1E63413D22BE4352007C4A5B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED41F27B5239823FAAB767D0 /* Pods-Team5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
