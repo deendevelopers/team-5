@@ -32,6 +32,7 @@ extension HomeListViewController: ListCellDelegate {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizViewController") as? QuizViewController else {
             return
         }
+        vc.configure(with: model)
         navigationController?.pushViewController(vc, animated: true)
     }
 }
