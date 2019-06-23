@@ -10,6 +10,7 @@ import UIKit
 
 class ListCell: UICollectionViewCell {
 
+    @IBOutlet weak var questionButton: UIButton!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var labelContainerView: UIView!
     @IBOutlet weak var imageView: UIImageView!
@@ -32,10 +33,10 @@ class ListCell: UICollectionViewCell {
         descriptionLabel.text = model.description
         setGradientBackground(top: model.labelColour.top, bottom: model.labelColour.bottom)
 
+        questionButton.backgroundColor = .clear
     }
 
     func setGradientBackground(top topColour: UIColor, bottom bottomColour: UIColor) {
-
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [bottomColour.cgColor, topColour.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
@@ -44,5 +45,9 @@ class ListCell: UICollectionViewCell {
         gradientLayer.frame = bounds
 
         labelContainerView.layer.insertSublayer(gradientLayer, at:0)
+    }
+
+    @IBAction func onQuestionButtonPressed(_ sender: Any) {
+        print("pressed")
     }
 }

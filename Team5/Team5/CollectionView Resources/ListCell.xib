@@ -55,16 +55,30 @@
                                     <constraint firstAttribute="bottom" secondItem="E2x-tn-bSY" secondAttribute="bottom" constant="8" id="w0Y-eJ-AqB"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vO-zO-Obh">
+                                <rect key="frame" x="273" y="12" width="45" height="45"/>
+                                <color key="backgroundColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DZC-TG-U5s"/>
+                                    <constraint firstAttribute="width" constant="45" id="Z9o-Rh-RBp"/>
+                                </constraints>
+                                <state key="normal" image="question"/>
+                                <connections>
+                                    <action selector="onQuestionButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="euz-ez-qKr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gPP-LX-h2S" firstAttribute="leading" secondItem="rmt-zE-tRN" secondAttribute="leading" id="6ga-TF-K2Q"/>
                             <constraint firstAttribute="trailing" secondItem="wue-pM-mv3" secondAttribute="trailing" id="CO9-3b-hIO"/>
                             <constraint firstAttribute="trailing" secondItem="gPP-LX-h2S" secondAttribute="trailing" id="Gup-Wi-vBV"/>
+                            <constraint firstItem="9vO-zO-Obh" firstAttribute="top" secondItem="rmt-zE-tRN" secondAttribute="top" constant="12" id="Vez-GL-MVD"/>
                             <constraint firstAttribute="bottom" secondItem="wue-pM-mv3" secondAttribute="bottom" id="fpG-6y-3Lh"/>
                             <constraint firstAttribute="bottom" secondItem="gPP-LX-h2S" secondAttribute="bottom" id="gIC-Os-uDm"/>
                             <constraint firstItem="wue-pM-mv3" firstAttribute="leading" secondItem="rmt-zE-tRN" secondAttribute="leading" id="pcX-wa-Vbr"/>
                             <constraint firstItem="gPP-LX-h2S" firstAttribute="top" secondItem="rmt-zE-tRN" secondAttribute="top" id="xgA-Th-V4d"/>
+                            <constraint firstAttribute="trailing" secondItem="9vO-zO-Obh" secondAttribute="trailing" constant="12" id="zB2-h2-dBx"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -82,12 +96,14 @@
                 <outlet property="descriptionLabel" destination="edf-oT-rUv" id="CM2-9I-CqJ"/>
                 <outlet property="imageView" destination="gPP-LX-h2S" id="pQ9-ub-gIn"/>
                 <outlet property="labelContainerView" destination="wue-pM-mv3" id="fDY-9z-YTe"/>
+                <outlet property="questionButton" destination="9vO-zO-Obh" id="oyW-zq-tsE"/>
                 <outlet property="titleLabel" destination="Oes-pW-aed" id="qRz-HY-wmF"/>
             </connections>
             <point key="canvasLocation" x="368.11594202898556" y="217.63392857142856"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="kaaba" width="153" height="153"/>
+        <image name="kaaba" width="134" height="124.5"/>
+        <image name="question" width="126" height="126"/>
     </resources>
 </document>
