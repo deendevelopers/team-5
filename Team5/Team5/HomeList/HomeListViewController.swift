@@ -17,7 +17,7 @@ class HomeListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Augmented Reality"
+        title = "Islamic History AR"
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib.init(nibName: "ListCell", bundle: nil),

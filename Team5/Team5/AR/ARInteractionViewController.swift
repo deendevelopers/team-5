@@ -179,6 +179,8 @@ extension ARModel {
             return .mosque
         case "Quran":
             return .quran
+        case "Ka'bah":
+            return .kaaba
         default:
             return nil
         }

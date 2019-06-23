@@ -11,6 +11,7 @@ import SceneKit
 class VirtualObjectNode: SCNNode {
 
     enum VirtualObjectType {
+        case kaaba
         case mosque
         case quran
     }
@@ -21,6 +22,9 @@ class VirtualObjectNode: SCNNode {
         
         var scale = 1.0
         switch type {
+        case .kaaba:
+            loadObj(name: "Untitled")
+            scale = 0.001
         case .mosque:
             loadObj(name: "Badshahi_Mosque")
             scale = 0.0002

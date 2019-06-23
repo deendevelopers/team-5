@@ -32,6 +32,8 @@
 		1EF592C322BE7D6600A9BFA6 /* Quran.psd in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592BE22BE7D6600A9BFA6 /* Quran.psd */; };
 		1EF592C422BE7D6600A9BFA6 /* Rehal.psd in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592BF22BE7D6600A9BFA6 /* Rehal.psd */; };
 		1EF592C522BE7D6600A9BFA6 /* Quran.obj in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592C022BE7D6600A9BFA6 /* Quran.obj */; };
+		1EF592C822BE8EAE00A9BFA6 /* Untitled.obj in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592C622BE8EAE00A9BFA6 /* Untitled.obj */; };
+		1EF592C922BE8EAE00A9BFA6 /* Untitled.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 1EF592C722BE8EAE00A9BFA6 /* Untitled.mtl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		1EF592BE22BE7D6600A9BFA6 /* Quran.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quran.psd; sourceTree = "<group>"; };
 		1EF592BF22BE7D6600A9BFA6 /* Rehal.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rehal.psd; sourceTree = "<group>"; };
 		1EF592C022BE7D6600A9BFA6 /* Quran.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quran.obj; sourceTree = "<group>"; };
+		1EF592C622BE8EAE00A9BFA6 /* Untitled.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Untitled.obj; sourceTree = "<group>"; };
+		1EF592C722BE8EAE00A9BFA6 /* Untitled.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Untitled.mtl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 		1E63414D22BE49E9007C4A5B /* 3DModels */ = {
 			isa = PBXGroup;
 			children = (
+				1EF592C722BE8EAE00A9BFA6 /* Untitled.mtl */,
+				1EF592C622BE8EAE00A9BFA6 /* Untitled.obj */,
 				1EF592A322BE783E00A9BFA6 /* Badshahi_Mosque.obj */,
 				1EF592A222BE783E00A9BFA6 /* Badshahi_Mosque.obj.mtl */,
 				1EF592A722BE78CB00A9BFA6 /* brick_wall_with_grille_4161566.png */,
@@ -214,9 +220,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF592C922BE8EAE00A9BFA6 /* Untitled.mtl in Resources */,
 				1EF592C422BE7D6600A9BFA6 /* Rehal.psd in Resources */,
 				1EF592C222BE7D6600A9BFA6 /* Carpet.psd in Resources */,
 				1EF592A822BE78CB00A9BFA6 /* gole.jpg in Resources */,
+				1EF592C822BE8EAE00A9BFA6 /* Untitled.obj in Resources */,
 				1EF592A422BE783E00A9BFA6 /* Badshahi_Mosque.obj.mtl in Resources */,
 				1E63413722BE4352007C4A5B /* LaunchScreen.storyboard in Resources */,
 				1EF592A522BE783E00A9BFA6 /* Badshahi_Mosque.obj in Resources */,
@@ -226,7 +234,6 @@
 				1EF592C122BE7D6600A9BFA6 /* Quran.mtl in Resources */,
 				1EF592C322BE7D6600A9BFA6 /* Quran.psd in Resources */,
 				1EF592C522BE7D6600A9BFA6 /* Quran.obj in Resources */,
-				0DCECEAA22BE746400C57120 /* InformationView.xib in Resources */,
 				1E63414222BE451F007C4A5B /* ARInteraction.storyboard in Resources */,
 				1E63413222BE4350007C4A5B /* Main.storyboard in Resources */,
 			);
@@ -397,7 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5CD97PK24A;
+				DEVELOPMENT_TEAM = 4CD575W4Y2;
 				INFOPLIST_FILE = Team5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,7 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5CD97PK24A;
+				DEVELOPMENT_TEAM = 4CD575W4Y2;
 				INFOPLIST_FILE = Team5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
