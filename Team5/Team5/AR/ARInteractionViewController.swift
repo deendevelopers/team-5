@@ -14,12 +14,13 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet var trackingStateLabel: UILabel!
 
+    @IBOutlet weak var infoContainerView: UIView!
     @IBOutlet weak var infoTitleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
-    
 
     var arModel: ARModel!
+
     @IBOutlet weak var informationViewTopConstraint: NSLayoutConstraint!
     
     var didAdd = false
@@ -28,6 +29,7 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
         super.viewDidLoad()
 
         infoTitleLabel.text = arModel.title
+        subtitleLabel.text = arModel.subtitle
         descriptionTextView.text = arModel.description
 
         navigationItem.largeTitleDisplayMode = .never
@@ -158,7 +160,7 @@ class ARInteractionViewController: UIViewController, ARSCNViewDelegate, ARSessio
     }
 
     @objc func showInfo() {
-        informationViewTopConstraint.constant = -250
+        informationViewTopConstraint.constant = -300
         UIView.animate(withDuration: 0.5) { [weak self] in
             self?.view.layoutIfNeeded()
         }

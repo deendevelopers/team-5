@@ -29,13 +29,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yI-A6-Ryd">
-                                <rect key="frame" x="0.0" y="667" width="375" height="250"/>
+                                <rect key="frame" x="0.0" y="667" width="375" height="300"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Oi-sK-QJp">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acp-iT-nsm">
-                                                <rect key="frame" x="337" y="8" width="30" height="30"/>
+                                                <rect key="frame" x="327" y="8" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="4f9-L7-0A5"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Cdl-jB-sEE"/>
+                                                </constraints>
                                                 <state key="normal" title="X">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -44,7 +48,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vtS-1d-cDm">
-                                                <rect key="frame" x="24" y="24" width="327" height="202"/>
+                                                <rect key="frame" x="24" y="24" width="327" height="252"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fyg-vk-wk9">
                                                         <rect key="frame" x="0.0" y="0.0" width="327" height="59"/>
@@ -64,10 +68,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bou-8O-pWa">
-                                                        <rect key="frame" x="0.0" y="67" width="327" height="135"/>
+                                                        <rect key="frame" x="0.0" y="67" width="327" height="185"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
@@ -84,13 +88,13 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="8Oi-sK-QJp" secondAttribute="bottom" id="AeG-je-1Fl"/>
                                     <constraint firstItem="8Oi-sK-QJp" firstAttribute="leading" secondItem="0yI-A6-Ryd" secondAttribute="leading" id="NrE-f0-Ek8"/>
                                     <constraint firstItem="8Oi-sK-QJp" firstAttribute="top" secondItem="0yI-A6-Ryd" secondAttribute="top" id="Q8w-EE-5Ok"/>
                                     <constraint firstAttribute="trailing" secondItem="8Oi-sK-QJp" secondAttribute="trailing" id="h6U-YK-5D6"/>
-                                    <constraint firstAttribute="height" constant="250" id="rV8-a8-6ri"/>
+                                    <constraint firstAttribute="height" constant="300" id="rV8-a8-6ri"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -111,6 +115,7 @@
                     </view>
                     <connections>
                         <outlet property="descriptionTextView" destination="bou-8O-pWa" id="k67-TD-UVB"/>
+                        <outlet property="infoContainerView" destination="8Oi-sK-QJp" id="MeI-cV-dJN"/>
                         <outlet property="infoTitleLabel" destination="ZuX-JL-eow" id="6ue-CF-Tm7"/>
                         <outlet property="informationViewTopConstraint" destination="a5j-TD-uoa" id="zJL-8c-0j9"/>
                         <outlet property="sceneView" destination="HLL-HX-9Kx" id="K8B-4z-W6K"/>
